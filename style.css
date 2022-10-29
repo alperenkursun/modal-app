@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pexels-atbo-245208.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#main{
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    border-radius: 15px;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+button{
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    background-color: red;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: red;
+}
+
+#modal{
+    width: 600px;
+    height: 250px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    opacity: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 32px;
+}
+
+.fa-solid.fa-xmark{
+    padding: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:red;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.fa-solid.fa-xmark:hover{
+    transform: scale(1.4);
+    opacity: 0.6;
+}
+
+#black{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
